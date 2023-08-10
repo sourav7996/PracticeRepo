@@ -33,9 +33,7 @@ public class Problem_09 {
             sum = sum +power(rem,ord);
             temp/=10;
         }
-        if(num == sum)
-            return true;
-        return false;
+        return num == sum;
     }
 
     private static int power(int rem, int ord) {
