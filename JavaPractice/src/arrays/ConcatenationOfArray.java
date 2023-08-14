@@ -9,7 +9,7 @@ Return the array ans.
  */
 public class ConcatenationOfArray {
     public static void main(String[] args) {
-        int [] nums = {1,2,1,3,5,8,105};
+        int[] nums = {1, 2, 1, 3, 5, 8, 105};
 //        long start = System.nanoTime();
         int[] ans = getConcatenation(nums);
         //int[] ans = getConcatenation(nums);
@@ -19,9 +19,9 @@ public class ConcatenationOfArray {
     }
 
     static int[] getConcatenation(int[] nums) {
-        int[] ans =new int[(nums.length)*2];
-        for (int i =0; i<ans.length;i++){
-            ans[i]=nums[i%nums.length];
+        int[] ans = new int[(nums.length) * 2];
+        for (int i = 0; i < ans.length; i++) {
+            ans[i] = nums[i % nums.length];
         }
         return ans;
     }
